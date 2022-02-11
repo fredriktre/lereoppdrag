@@ -1,0 +1,143 @@
+﻿/*master stlyes*/
+
+    body {
+        margin: 0px;
+        max-width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+        background-image: url(../pics/background.svg);        
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+/*nav styles*/
+
+    .active-nav-link {
+        border-bottom: white !important;
+    }
+
+    .nav-wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 38px;
+        background-size: cover;
+        background-image: url(../pics/navbar.svg);
+    }
+
+    .text-pad {
+        padding-top: 20px;
+    }
+
+    .left-side {
+        display: flex;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .right-side {
+        display: flex;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .nav-wrapper > .left-side > div {
+        margin-right: 20px;
+        font-size: 0.9em;
+        text-transform: uppercase;
+    }
+
+    .nav-link-wrapper {
+        height: 22px;
+        border-bottom: 1px solid transparent;
+        transition: border-bottom 0.5s;
+    }
+
+    .nav-link-wrapper a {
+        color: lightgreen;
+        text-decoration: none;
+        transition: color 0.5s;
+    }    
+
+    .nav-link-wrapper a:hover {
+        color: green;
+        border-bottom: solid green;
+        transition: 0.5s;
+    }
+
+    .comp-logo-wrapper {
+        border-radius: 30%;
+        padding: 0px;
+    }
+
+    .comp-logo-wrapper img {
+        width: 100px;
+    }
+
+    .background {
+        background-image: url(../pics/backgroundgreen.svg);
+    }
+
+
+    /*welcome styles*/   
+    .welcome-wrapper {
+        text-align: center;
+    }
+    
+    .welcome-text-wrapper {
+        color: white;
+        margin-left: 38px;
+        margin-top: 38px;
+    }
+
+    /*test styles*/
+
+    .test-wrapper {
+        margin-top: 40px;
+        color: white;
+    }
+
+    .test-answer-wrapper {
+
+    }
+
+    .test-2size {
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        margin: 10px;
+    }
+
+    .insert-wrapper {
+        left: 50%;
+        right: auto;
+        text-align: center;
+    }
+
+    .list-wrapper {
+        
+    }
+
+    .Dropdown {
+        text-align: center;
+        font-size: medium;
+        width: 100px;
+        height: 50px;
+    }
+
+    /*MakeQuestion styles*/
+
+    .make-wrapper {
+        transform: translate(-50%, 0);
+        position: absolute;
+        left: 50%;
+        justify-content: space-evenly;
+    }
+
+    .grid-wrapper{
+        display:flex;
+    }
+
+    
