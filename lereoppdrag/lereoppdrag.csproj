@@ -75,7 +75,7 @@
     <Content Include="video.aspx" />
     <Content Include="makequestion.aspx" />
     <Content Include="login.aspx" />
-    <Content Include="WebForm6.aspx" />
+    <Content Include="Regist.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="lese.aspx.cs">
@@ -121,12 +121,12 @@
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebForm6.aspx.cs">
-      <DependentUpon>WebForm6.aspx</DependentUpon>
+    <Compile Include="Regist.aspx.cs">
+      <DependentUpon>Regist.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForm6.aspx.designer.cs">
-      <DependentUpon>WebForm6.aspx</DependentUpon>
+    <Compile Include="Regist.aspx.designer.cs">
+      <DependentUpon>Regist.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

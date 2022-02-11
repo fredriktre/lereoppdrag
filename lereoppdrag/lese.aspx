@@ -28,6 +28,16 @@
                     <a href="test.aspx">testside</a>
                 </div>
 
+                <div id="makeq_wrapper" class="nav-link-wrapper text-pad" runat="server" visible="true">
+                    <a href="makequestion.aspx">make question</a>
+                </div>                
+            </div>
+                        
+            <div class="right-side">
+                <div id="Login" class="nav-link-wrapper text-pad" runat="server">
+                    <asp:LoginName ID="LoginName1" runat="server" />
+                    <asp:LoginStatus ID="LoginStatus1" runat="server" />
+                </div>
             </div>
 
         </div>

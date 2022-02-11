@@ -10,6 +10,34 @@ namespace DataAccessLayer
 {
     public class DBLayer
     {
+
+        public void RegisterUser(string username, string password, string email)
+        {
+            var connectionString = ConfigurationManager.ConnectionStrings["ConKurs"].ConnectionString;
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                SqlParameter param;
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("INSERT INTO User (UserName, Password, Email) " + "VALUES (@UserName,@Password,@Email)", conn);
+                cmd.CommandType = CommandType.Text;
+
+                param = new SqlParameter("@UserName", SqlDbType.NVarChar);
+                param.Value = username;
+                cmd.Parameters.Add(param);
+
+                param = new SqlParameter("@Password", SqlDbType.NVarChar);
+                param.Value = password;
+                cmd.Parameters.Add(param);
+
+                param = new SqlParameter("@Email", SqlDbType.NVarChar);
+                param.Value = email;
+                cmd.Parameters.Add(param);
+
+                cmd.ExecuteNonQuery();
+                conn.Close();
+            }
+        }
         public void InsertAnswer(string AnswerValue, string Username, string question)
         {
             var connectionString = ConfigurationManager.ConnectionStrings["ConKurs"].ConnectionString;

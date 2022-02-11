@@ -11,7 +11,7 @@ namespace lereoppdrag
 {
 
 
-    public partial class WebForm1
+    public partial class WebForm6
     {
 
         /// <summary>
@@ -60,30 +60,57 @@ namespace lereoppdrag
         protected global::System.Web.UI.WebControls.LoginStatus LoginStatus1;
 
         /// <summary>
-        /// TextBox_EmailHelp control.
+        /// Label_Disclaimer control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox_EmailHelp;
+        protected global::System.Web.UI.WebControls.Label Label_Disclaimer;
 
         /// <summary>
-        /// TextArea_HelpText control.
+        /// Label1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea TextArea_HelpText;
+        protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
-        /// Button_HelpSend control.
+        /// TextBox_UserName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button_HelpSend;
+        protected global::System.Web.UI.WebControls.TextBox TextBox_UserName;
+
+        /// <summary>
+        /// TextBox_Password control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox_Password;
+
+        /// <summary>
+        /// TextBox_Email control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox_Email;
+
+        /// <summary>
+        /// Button_Register control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button_Register;
     }
 }

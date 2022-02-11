@@ -78,9 +78,10 @@ namespace lereoppdrag
             string answerC = _shuffledQuestions[_currentQuestion].AnswerC;
             string answerD = _shuffledQuestions[_currentQuestion].AnswerD;
 
-            string username = "Admin";
+            string userName=User.Identity.Name;
+            //string userName = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
             string answervalue = DropDownList1.SelectedValue;
-            dbLayer.InsertAnswer(answervalue, username, questionNow);
+            dbLayer.InsertAnswer(answervalue, userName, questionNow);
 
             if (_currentQuestion > _shuffledQuestions.Count - 1)
             {

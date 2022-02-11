@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="lereoppdrag.WebForm5" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm6.aspx.cs" Inherits="lereoppdrag.WebForm6" %>
 
 <!DOCTYPE html>
 
@@ -35,20 +35,18 @@
                         
             <div class="right-side">
                 <div id="Login" class="nav-link-wrapper text-pad" runat="server">
-                    <asp:LoginName ID="LoginName1" runat="server" visible="false"/>
-                    <asp:LoginStatus ID="LoginStatus1" runat="server" visible="false"/>
-                    <a href="Regist.aspx">Register</a>               
-                </div>                                       
+                    <asp:LoginName ID="LoginName1" runat="server" />
+                    <asp:LoginStatus ID="LoginStatus1" runat="server" />
+                </div>
             </div>
-            
 
         </div>
-        <div style="display: flex; justify-content: center; ">
-            <asp:TextBox ID="TextBox_Username" runat="server" placeholder="Username"></asp:TextBox>
+        <div>
+            <asp:TextBox ID="TextBox_UserName" runat="server" placeholder="Username"></asp:TextBox>
             <br />
-            <asp:TextBox ID="TextBox_Password" runat="server" placeholder="Password"></asp:TextBox>
+            <asp:TextBox ID="TextBox_Password" runat="server" AutoCompleteType="None" placeholder="Password"></asp:TextBox>
             <br />
-            <asp:Button ID="Button_Login" runat="server" Text="Login" OnClick="Button_Login_Click" />
+            <asp:TextBox ID="TextBox_Email" runat="server" placeholder="Email"></asp:TextBox>
         </div>
     </form>
 </body>

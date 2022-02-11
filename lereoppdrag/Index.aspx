@@ -35,7 +35,8 @@
                         
             <div class="right-side">
                 <div id="Login" class="nav-link-wrapper text-pad" runat="server">
-                    <a style="text-transform: uppercase; font-weight: bold;" href="Login.aspx">login</a>
+                    <asp:LoginName ID="LoginName1" runat="server" />
+                    <asp:LoginStatus ID="LoginStatus1" runat="server" />
                 </div>
             </div>
 
