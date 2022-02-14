@@ -61,7 +61,7 @@
         </div>
 
         <div id="QuestionTextDiv" class="test-wrapper" runat="server" visible="false">
-            <div>
+            <div style="display: flex; justify-content: center;">
                 <asp:Label ID="QuestionText" runat="server" Text=" "></asp:Label>
             </div>
 

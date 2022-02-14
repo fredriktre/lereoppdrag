@@ -28,7 +28,7 @@
                     <a href="test.aspx">testside</a>
                 </div>
 
-                <div id="makeq_wrapper" class="nav-link-wrapper text-pad" runat="server" visible="true">
+                <div id="makeq_wrapper" class="nav-link-wrapper text-pad" runat="server" visible="false">
                     <a href="makequestion.aspx">make question</a>
                 </div>                
             </div>

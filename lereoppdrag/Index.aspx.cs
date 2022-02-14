@@ -20,6 +20,8 @@ namespace lereoppdrag
             //string username = currentUser.UserName;
             ////Get UserId of Currently logged in user.
             //string UserId = currentUser.ProviderUserKey.ToString();
+
+            IfAdmin();
         }           
 
         DBLayer db = new DBLayer();
@@ -27,6 +29,16 @@ namespace lereoppdrag
         {
             
             db.InsertHelp(EmailHelp: TextBox_EmailHelp.Text, HelpText: TextArea_HelpText.InnerText);
+        }
+
+        public void IfAdmin()
+        {
+            string currentUser = User.Identity.Name;
+
+            if (currentUser == "Admin")
+            {
+                makeq_wrapper.Visible = true;
+            }
         }
     }
 }
